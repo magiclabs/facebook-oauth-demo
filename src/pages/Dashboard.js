@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   const finishSocialLogin = async () => {
     try {
-      const result = await magic.oauth.getRedirectResult();
+      const result = await magic.oauth2.getRedirectResult();
       setUser(result);
       console.log(result);
     } catch (err) {
