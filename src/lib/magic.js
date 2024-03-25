@@ -1,5 +1,5 @@
 import { Magic } from "magic-sdk";
-import { OAuthExtension } from "@magic-ext/oauth";
+import { OAuthExtension } from "@magic-ext/oauth2";
 
 const createMagic = (key) => {
   return (

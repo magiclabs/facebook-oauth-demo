@@ -4,7 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 const Login = () => {
   const handleSocialLogin = async () => {
     try {
-      await magic.oauth.loginWithRedirect({
+      await magic.oauth2.loginWithRedirect({
         provider: "facebook",
         redirectURI: new URL("/dashboard", window.location.origin).href,
       });
